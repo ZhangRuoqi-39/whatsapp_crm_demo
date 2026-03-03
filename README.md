@@ -298,7 +298,8 @@ Expected output:
 ### 4. Launch demo
 
 ```bash
-streamlit run app.py --server.port 8502
+streamlit run app_Chinese.py
+streamlit run app_English.py
 ```
 
 Open `http://localhost:8502`
