@@ -29,11 +29,11 @@ Live-service games generate thousands of customer support tickets daily — paym
 
 | Pain Point | This System's Response |
 |---|---|
-| 15-min average response time | ⚡ 8-second AI reply |
-| Manual classification inconsistency | 🎯 96% intent accuracy |
-| Uncontrolled LLM outputs | 🛡️ Dual safety layer, 100% block rate |
-| Agents handling routine FAQs | 🤖 82% automation rate |
-| Hard to scale personalization | 📣 Intent-triggered marketing suggestions |
+| 15-min average response time | 8-second AI reply |
+| Manual classification inconsistency | 96% intent accuracy |
+| Uncontrolled LLM outputs | Dual safety layer, 100% block rate |
+| Agents handling routine FAQs | 82% automation rate |
+| Hard to scale personalization | Intent-triggered marketing suggestions |
 
 ---
 
@@ -407,4 +407,4 @@ These items are explicitly **out of scope** for the current prototype but repres
 
 ---
 
-*Built by Bunny Williams | MSBA, HKU | 2026*
+*Built by ZhangRuoqi
