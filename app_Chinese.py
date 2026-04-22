@@ -1,3 +1,7 @@
+import os
+import streamlit as st
+[os.environ.setdefault(k, str(v)) for k, v in st.secrets.items()]
+
 """
 app.py
 ------
