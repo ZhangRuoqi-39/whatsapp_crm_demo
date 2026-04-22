@@ -9,8 +9,8 @@ from pathlib import Path
 _PROJECT_ROOT = Path(__file__).parent.parent
 
 # ── API Keys ─────────────────────────────────────────────
-DASHSCOPE_API_KEY = os.environ.get("DASHSCOPE_API_KEY")
-DEEPSEEK_API_KEY  = os.environ.get("DEEPSEEK_API_KEY")
+DASHSCOPE_API_KEY = os.environ.get("DASHSCOPE_API_KEY", "")
+DEEPSEEK_API_KEY  = os.environ.get("DEEPSEEK_API_KEY", "")
 
 # ── 模型配置 ─────────────────────────────────────────────
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-v3")
