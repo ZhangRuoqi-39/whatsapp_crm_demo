@@ -1,0 +1,505 @@
+{
+  "test_cases": [
+    {
+      "query": "can i create a gold account",
+      "expected_intent": "account_register",
+      "expected_snippet": "That's fantastic! I'm thrilled to assist you in creating your gold account. To get started, could you please provide me with your full name, email address, and a username of your preference? This info"
+    },
+    {
+      "query": "create standard cacount",
+      "expected_intent": "account_register",
+      "expected_snippet": "Thank you for choosing to create a standard account with us! I'm here to assist you throughout the process. To get started, I'll need some basic information from you such as your full name, email addr"
+    },
+    {
+      "query": "help me creting a {{Account Type}} account",
+      "expected_intent": "account_register",
+      "expected_snippet": "I'm glad to assist you in creating a {{Account Type}} account! It's a fantastic choice, and I'm confident that you'll benefit greatly from the enhanced features and premium experience. To begin the pr"
+    },
+    {
+      "query": "create new pro account for daughter",
+      "expected_intent": "account_register",
+      "expected_snippet": "That's wonderful! I'm thrilled to assist you in creating a new {{Account Type}} account for your daughter. To begin, I'll require a few details to personalize her account. Can you please provide her f"
+    },
+    {
+      "query": "another {{Account Category}} account for father",
+      "expected_intent": "account_register",
+      "expected_snippet": "Thank you for your interest in creating another {{Account Category}} account for your father. I'm here to assist you every step of the way. To proceed with the account creation, I will need some detai"
+    },
+    {
+      "query": "delete standard account",
+      "expected_intent": "account_delete",
+      "expected_snippet": "We appreciate your inquiry about deleting your {{Account Type}} account. I understand that you're looking to close or remove your account, and I'm here to assist you. To delete your {{Account Type}} a"
+    },
+    {
+      "query": "have problems with the cancellation of my {{Account Type}} account",
+      "expected_intent": "account_delete",
+      "expected_snippet": "I'm sorry to hear that you're experiencing difficulties with canceling your {{Account Type}} account. I understand that account cancellation can sometimes be confusing or unclear, and I'm here to help"
+    },
+    {
+      "query": "I do not know what to do to remove my standard account",
+      "expected_intent": "account_delete",
+      "expected_snippet": "Thank you for trusting to us for assistance with removing your standard account. I understand that you may be unsure about the necessary steps to take, and I'm here to help guide you through the proce"
+    },
+    {
+      "query": "how can I get information about a gold account deletion?",
+      "expected_intent": "account_delete",
+      "expected_snippet": "Appreciate you reaching out to us for information about deleting your gold account. We understand that you may have concerns or questions surrounding this process. Rest assured that we are here to ass"
+    },
+    {
+      "query": "could you help me deleting a platinum account?",
+      "expected_intent": "account_delete",
+      "expected_snippet": "Appreciate your message about deleting your platinum account. I'm here to assist you with this process and provide the necessary guidance. To start the account deletion process, please provide me with"
+    },
+    {
+      "query": "changing details on {{Account Type}} account",
+      "expected_intent": "account_edit",
+      "expected_snippet": "How exciting it is to witness your commitment to modifying the details on your {{Account Type}} account!I'm here to provide you with the necessary guidance and support to ensure a seamless experience."
+    },
+    {
+      "query": "updating detais on standard account",
+      "expected_intent": "account_edit",
+      "expected_snippet": "How incredible it is to embark on the journey of updating details on your esteemed standard account!I'm here to provide you with the necessary assistance and guidance. Your safety and satisfaction are"
+    },
+    {
+      "query": "modifying data on {{Account Category}} account",
+      "expected_intent": "account_edit",
+      "expected_snippet": "How remarkable it is to witness your commitment to modify the data on your {{Account Category}} account!I'm thrilled to provide you with the necessary guidance and assistance to ensure a seamless and "
+    },
+    {
+      "query": "modify details on {{Account Type}} account",
+      "expected_intent": "account_edit",
+      "expected_snippet": "How wonderful it is to witness your dedication to modifying the details on your {{Account Type}} account!I'm excited to support you in making these changes seamlessly. Rest assured, I'm here to provid"
+    },
+    {
+      "query": "modifying info on {{Account Category}} account",
+      "expected_intent": "account_edit",
+      "expected_snippet": "How remarkable it is to witness your dedication to modifying the information on your {{Account Category}} account!I am here to provide you with the necessary support and guidance throughout this proce"
+    },
+    {
+      "query": "I want to reset the bloody key of my user, will you help me?",
+      "expected_intent": "account_recovery",
+      "expected_snippet": "I'm following your frustration and urgency in resetting the key to your user account. Rest assured, I'm here to guide you through the process every step of the way. \n\nTo reset the key to your user acc"
+    },
+    {
+      "query": "I can't remember the PIN of my account, how do I reset it?",
+      "expected_intent": "account_recovery",
+      "expected_snippet": "I'm here to assist you in resetting the PIN of your account. For a smooth and hassle-free recovery process, follow these steps:\n\n1. Head over to the \"{{Login Page URL}}\" of our platform.\n2. Look for t"
+    },
+    {
+      "query": "someone stole my user key, help me retrieving it",
+      "expected_intent": "account_recovery",
+      "expected_snippet": "I'm sorry to hear that your user key has been stolen, and I understand how important it is to retrieve it. Let's work together to get your key back:\n\n1. Start by visiting our \"{{Account Recovery Page}"
+    },
+    {
+      "query": "where could I reset the pass of my user account?",
+      "expected_intent": "account_recovery",
+      "expected_snippet": "Of course! I'm delighted to assist you in resetting the password of your user account. To initiate the process, please follow these steps:\n\n1. Kindly navigate to the \"{{Login Page URL}}\" of our platfo"
+    },
+    {
+      "query": "where do I retrieve my user access key?",
+      "expected_intent": "account_recovery",
+      "expected_snippet": "Excellent question! I'd be delighted to guide you in retrieving your user access key. Rest assured, it's a breeze. 🌟\n\nTo retrieve your user access key, please follow these simple steps:\n\n1. Head over "
+    },
+    {
+      "query": "I have got to report an error with signup",
+      "expected_intent": "account_issue",
+      "expected_snippet": "We appreciate you reaching out to us to report the error you encountered during the signup process. Your feedback helps us identify areas for improvement and enhance the user experience. To assist you"
+    },
+    {
+      "query": "need help to report a problem with signup",
+      "expected_intent": "account_issue",
+      "expected_snippet": "Grateful you reached out to us and seeking assistance in reporting the problem you encountered during the signup process. We value your feedback and want to ensure that your signup experience is as sm"
+    },
+    {
+      "query": "i dont know how i can report an error with registrations",
+      "expected_intent": "account_issue",
+      "expected_snippet": "We understand that you are unsure about how to report an error with registrations. Don't worry, we're here to help you. To report an error with registrations, you can either reach out to our customer "
+    },
+    {
+      "query": "I do not know how to report problems with registrations",
+      "expected_intent": "account_issue",
+      "expected_snippet": "We appreciate your willingness to seek guidance on how to report problems with registrations. Our goal is to assist you every step of the way. To report any issues you are facing during the registrati"
+    },
+    {
+      "query": "I have issues  trying to register",
+      "expected_intent": "account_issue",
+      "expected_snippet": "We understand that you're experiencing issues while trying to register, and we apologize for the inconvenience this may have caused you. Our team is committed to providing you with a seamless registra"
+    },
+    {
+      "query": "I have got to switch to the standard account , help me",
+      "expected_intent": "account_switch",
+      "expected_snippet": "I understand your need to switch to the {{Account Type}} account and I'm here to assist you every step of the way:\n\n1. Sign In: Access your account by logging in to our platform.\n2. Account Settings: "
+    },
+    {
+      "query": "help me using the pro profile",
+      "expected_intent": "account_switch",
+      "expected_snippet": "I'm on it! I'm honored to assist you in utilizing our {{Account Type}} profile to its fullest potential:\n\n1. Begin by logging into your account.\n2. Navigate to your account settings or profile section"
+    },
+    {
+      "query": "what do I need to do to switch to the freemium account?",
+      "expected_intent": "account_switch",
+      "expected_snippet": "Thank you for considering switching to our {{Account Category}} account! To make this transition, you can follow these steps:\n\n1. Sign in: Begin by logging into your existing account.\n2. Account Setti"
+    },
+    {
+      "query": "how do i use the premium account",
+      "expected_intent": "account_switch",
+      "expected_snippet": "I'm on it! I'm excited to assist you in maximizing the benefits of your premium account:\n\n1. Account Activation: Begin by logging into your account with your credentials.\n2. {{Account Category}} Featu"
+    },
+    {
+      "query": "I have got to use the {{Account Type}} profile",
+      "expected_intent": "account_switch",
+      "expected_snippet": "Sure! I appreciate your interest in utilizing our {{Account Type}} profile. Let's make sure you have all the information you need to get started:\n\n1. Access Your Account: Begin by signing in to our pl"
+    },
+    {
+      "query": "I do not know what I need to do to inform of a payment issue",
+      "expected_intent": "payment_failed",
+      "expected_snippet": "Not to worry! I'm here to guide you through the process of reporting a payment issue. To get started, you can reach out to our customer support team either through our website's live chat feature or b"
+    },
+    {
+      "query": "want assistance informing of an error with online payment",
+      "expected_intent": "payment_failed",
+      "expected_snippet": "I've been informed that you need assistance in informing us about an error you encountered with your online payment. I assure you that I'm here to help you every step of the way. To ensure accurate an"
+    },
+    {
+      "query": "would it be possible to inform of a bloody payment error?",
+      "expected_intent": "payment_failed",
+      "expected_snippet": "I'm sorry to hear that you're facing a payment error. I'll do my best to help you through this. To provide a swift and effective resolution, could you please provide more details about the error you e"
+    },
+    {
+      "query": "where can I notify of issues with online payment?",
+      "expected_intent": "payment_failed",
+      "expected_snippet": "Thank you for reaching out regarding the issues you're encountering with your online payment. We understand the urgency of resolving this matter and providing you with the necessary assistance. To rep"
+    },
+    {
+      "query": "I need help solving errors with online paymnt",
+      "expected_intent": "payment_failed",
+      "expected_snippet": "I'm sorry to hear that you're experiencing errors with your online payment. I understand how frustrating that can be. To better assist you in resolving these errors, could you please provide more deta"
+    },
+    {
+      "query": "check what payment  methods ya accept",
+      "expected_intent": "payment_methods",
+      "expected_snippet": "Definitely! I'm glad you're interested in our payment methods. Here's a detailed list of the payment options we accept:\n\n- Credit/Debit Card: You can use major credit or debit cards like Visa, Masterc"
+    },
+    {
+      "query": "is it possible to check your fucking payment methods?",
+      "expected_intent": "payment_methods",
+      "expected_snippet": "I genuinely apologize if there was any misunderstanding or frustration. I'm here to assist you with your inquiry regarding our accepted payment methods. Here's a list of the convenient options we offe"
+    },
+    {
+      "query": "i want assistance to see ur allowed  payment options",
+      "expected_intent": "payment_methods",
+      "expected_snippet": "Wonderful! I'm here to assist you in exploring our wide range of allowed payment options. We believe in providing convenience and flexibility to our valued customers. You can choose from various payme"
+    },
+    {
+      "query": "I need help checking what payment methods are allowed",
+      "expected_intent": "payment_methods",
+      "expected_snippet": "Assuredly! I'm here to lend a hand and provide the information you seek about our accepted payment methods. We strive to accommodate a wide range of preferences to ensure a seamless and convenient sho"
+    },
+    {
+      "query": "is it possible to check the available payment modalities?",
+      "expected_intent": "payment_methods",
+      "expected_snippet": "Certainly! I'm delighted to assist you in exploring our available payment methods. Here is a comprehensive list of the modalities we offer:\n\n- **Credit/Debit Card:** We accept various major credit and"
+    },
+    {
+      "query": "want assistance getting a rebate",
+      "expected_intent": "refund_request",
+      "expected_snippet": "I can relate to the understanding that you need assistance in obtaining a rebate. It can be frustrating to navigate the process on your own, and I'm here to provide guidance every step of the way. To "
+    },
+    {
+      "query": "I want assistance to ask for a rebate",
+      "expected_intent": "refund_request",
+      "expected_snippet": "I catch on to the fact that you're seeking assistance in asking for a rebate, and I'm here to guide you through the process. Rebates can be a great way to get back some of the money you've spent, and "
+    },
+    {
+      "query": "getting money back",
+      "expected_intent": "refund_request",
+      "expected_snippet": "I realized, you're seeking assistance to get your money back, and I'm here to help you navigate through the process. Obtaining a refund can vary depending on the specific circumstances and policies in"
+    },
+    {
+      "query": "I paid {{Currency Symbol}}{{Refund Amount}} for this product, how doI get a rebate?",
+      "expected_intent": "refund_request",
+      "expected_snippet": "I understand your frustration and desire to receive a rebate for the ${{Refund Amount}} purchase you made. Allow me to assist you in the process of obtaining your rebate. To initiate this request, it "
+    },
+    {
+      "query": "refund {{Refund Amount}} dollars",
+      "expected_intent": "refund_request",
+      "expected_snippet": "I've understood you are requesting a refund of {{Refund Amount}} dollars, and I'm here to assist you with this matter. To proceed with the refund, could you please provide me with some additional deta"
+    },
+    {
+      "query": "I am trying to check in which cases can I request a refund",
+      "expected_intent": "refund_policy",
+      "expected_snippet": "Assuredly! I fully grasp your desire to understand the situations where you can request a refund. Allow me to provide you with a comprehensive breakdown:\n\n1. **Product or Service Defect:** If the prod"
+    },
+    {
+      "query": "help to check in whatcases can I request my money back",
+      "expected_intent": "refund_policy",
+      "expected_snippet": "Certainly! I understand your need to clarify the situations in which you can request a refund. Allow me to provide you with the details:\n\n1. **Product/Service Defect:** If the product or service you p"
+    },
+    {
+      "query": "want help seeing in what cases can i request a reimbursement",
+      "expected_intent": "refund_policy",
+      "expected_snippet": "Thank you for reaching out! I understand your eagerness to learn about the situations in which you can request a reimbursement. Allow me to provide you with the necessary information:\n\n1. **Product/Se"
+    },
+    {
+      "query": "I have got to see your refund policy, help me",
+      "expected_intent": "refund_policy",
+      "expected_snippet": "I'll make it happen! I understand your urgency in accessing our refund policy and getting all the necessary information about it. Our refund policy is designed with your satisfaction in mind, ensuring"
+    },
+    {
+      "query": "assistance to check in whih cases can I ask for refunds",
+      "expected_intent": "refund_policy",
+      "expected_snippet": "Of course! Understanding the cases in which you can request a refund is of utmost importance. Here are some common scenarios where you may be eligible for a refund:\n\n1. Product/Service Defect: If the "
+    },
+    {
+      "query": "can ya help me cancel purchase {{Order Number}}",
+      "expected_intent": "purchase_cancel",
+      "expected_snippet": "Sure! I'm here to assist you in canceling your purchase with the reference number {{Order Number}}. I understand the importance of your request and I'll ensure that the cancellation process is as smoo"
+    },
+    {
+      "query": "i need help with cancelling purchase {{Order Number}}",
+      "expected_intent": "purchase_cancel",
+      "expected_snippet": "I gather that you're seeking assistance in canceling your purchase with the order number {{Order Number}}. Rest assured, I'm here to help you with that. To cancel your purchase, follow these steps:\n\n1"
+    },
+    {
+      "query": "I want assistance cancelling order {{Order Number}}",
+      "expected_intent": "purchase_cancel",
+      "expected_snippet": "I grasp that you're seeking assistance with canceling your order with the order number {{Order Number}}. Please allow me to guide you through the cancellation process and address any concerns you may "
+    },
+    {
+      "query": "I need assistance with canceling order {{Order Number}}",
+      "expected_intent": "purchase_cancel",
+      "expected_snippet": "I've ascertained that you need assistance with canceling order {{Order Number}}. Your request is important to us, and we're here to help you navigate through the cancellation process. To proceed with "
+    },
+    {
+      "query": "question about canceling purchase {{Order Number}}",
+      "expected_intent": "purchase_cancel",
+      "expected_snippet": "I've deduced from your message that you have a question regarding canceling your purchase associated with the order number {{Order Number}}. How may I assist you with that?"
+    },
+    {
+      "query": "check invoice from {{Person Name}}",
+      "expected_intent": "purchase_history",
+      "expected_snippet": "We appreciate your inquiry to us for help with checking the invoice from {{Salutation}} {{Client Last Name}}. I completely understand the importance of accessing that information. To assist you better"
+    },
+    {
+      "query": "find bill #37777",
+      "expected_intent": "purchase_history",
+      "expected_snippet": "Assuredly! I understand your need to locate your bill with the number #{{Invoice Number}}. Let me guide you through the process. To find your bill, you can visit the \"Billing\" section on our website. "
+    },
+    {
+      "query": "want assistance to find the bill #85632",
+      "expected_intent": "purchase_history",
+      "expected_snippet": "I can see that you need assistance in locating the bill with the number #{{Invoice Number}}. It can be frustrating when you can't find important documents, but don't worry, I'm here to help. Could you"
+    },
+    {
+      "query": "wanna see bill #85632",
+      "expected_intent": "purchase_history",
+      "expected_snippet": "For sure! I understand your request to view the bill with number #{{Invoice Number}}. Let me assist you in finding the information you are looking for. Could you provide me with any additional details"
+    },
+    {
+      "query": "I want assistance seeing the bill from {{Person Name}}",
+      "expected_intent": "purchase_history",
+      "expected_snippet": "I'm fully aware of your request for assistance in locating the bill from {{Salutation}} {{Client Last Name}}. Rest assured, I'm here to help you with that. Could you please provide me with any additio"
+    },
+    {
+      "query": "i hasve to see the ETA of order {{Order Number}} how can i do it",
+      "expected_intent": "item_delivery",
+      "expected_snippet": "It's great to hear from you! I can see that you would like to check the Estimated Time of Arrival (ETA) for your order with the number {{Order Number}} {{Order Number}}. To do so, you can visit the '{"
+    },
+    {
+      "query": "I want to see the fucking ETA of the order {{Order Number}}",
+      "expected_intent": "item_delivery",
+      "expected_snippet": "Thank you for reaching out! I'm here to assist you with finding the estimated time of arrival (ETA) for your order with the order number {{Order Number}}. To check the ETA, please visit the '{{Order S"
+    },
+    {
+      "query": "how can I check purchase {{Order Number}} current status?",
+      "expected_intent": "item_delivery",
+      "expected_snippet": "Your input is valuable! I'm picking up that you would like assistance in checking the current status of your purchase with the purchase number {{Order Number}}. To view the current status of your purc"
+    },
+    {
+      "query": "need assistance to see the status of purchase {{Order Number}}",
+      "expected_intent": "item_delivery",
+      "expected_snippet": "Your reach-out is appreciated! I'm sensing that you need assistance in checking the status of your purchase with the purchase number {{Order Number}}. To help you with this, please visit the '{{Order "
+    },
+    {
+      "query": "locate order {{Order Number}}",
+      "expected_intent": "item_delivery",
+      "expected_snippet": "Thank you for contacting us! I understand that you need assistance in locating your order with the order number {{Order Number}}. I'm here to help! To access the information about your order, please l"
+    },
+    {
+      "query": "I have to acquire some of your article",
+      "expected_intent": "in_game_purchase",
+      "expected_snippet": "Thank you for expressing your interest in acquiring some of our articles. I'm thrilled to assist you with this exciting endeavor. To ensure that we provide you with the best possible experience, could"
+    },
+    {
+      "query": "need assistance buying some items",
+      "expected_intent": "in_game_purchase",
+      "expected_snippet": "Thank you for reaching out! I'm excited to assist you with buying the items you need. We have a seamless and user-friendly shopping process to make your experience enjoyable and hassle-free. Could you"
+    },
+    {
+      "query": "I do not nkow what I have to do to order a few of your item",
+      "expected_intent": "in_game_purchase",
+      "expected_snippet": "I appreciate your inquiry and would be glad to assist you in placing an order for our items. To guide you through the process, I'll provide you with step-by-step instructions. First, please visit our "
+    },
+    {
+      "query": "I do not know how to order a product",
+      "expected_intent": "in_game_purchase",
+      "expected_snippet": "I've realized that ordering a product may seem overwhelming if you're unfamiliar with the process. But don't worry, I'm here to assist you every step of the way. To begin, you can visit our website an"
+    },
+    {
+      "query": "i need help purchasing several items",
+      "expected_intent": "in_game_purchase",
+      "expected_snippet": "Thank you for reaching out! It's great to hear that you're interested in purchasing several items from us. I'm here to guide you through the process step-by-step and ensure that your shopping experien"
+    },
+    {
+      "query": "filing customer complaint against your company",
+      "expected_intent": "complaint",
+      "expected_snippet": "I've taken note that you're looking to file a customer complaint against our company, and I apologize for any negative experience you may have had. Your feedback is important to us, and we take compla"
+    },
+    {
+      "query": "want help making an reclamation against your organization",
+      "expected_intent": "complaint",
+      "expected_snippet": "I've picked up that you want help making a reclamation against our organization. I apologize for any negative experience you may have had, and I assure you that your concerns are important to us. To g"
+    },
+    {
+      "query": "I  have got to lodge a consumer complaint",
+      "expected_intent": "complaint",
+      "expected_snippet": "I genuinely regret that you had an experience that led you to lodge a consumer complaint. Your feedback is valuable to us as it helps us identify areas for improvement. I assure you that I am here to "
+    },
+    {
+      "query": "what do i have to do to make a consumer compoaint",
+      "expected_intent": "complaint",
+      "expected_snippet": "I see your concerns and the need to make a consumer complaint. To ensure that your complaint is addressed efficiently, I recommend following these steps:\n\n1. Gather all necessary information: Collect "
+    },
+    {
+      "query": "assistance to make a caim against ur business",
+      "expected_intent": "complaint",
+      "expected_snippet": "I've observed that you require assistance in making a claim against our business. I apologize for any inconvenience or dissatisfaction you may have experienced, and I want to assure you that we take c"
+    },
+    {
+      "query": "i dont know what to do tl talk to an agent",
+      "expected_intent": "escalate_to_human",
+      "expected_snippet": "Grateful for your contact! I get the sense that you don't know what steps to take in order to talk to an agent. Don't worry, I'm here to help you out. To connect with a live agent, you can try the fol"
+    },
+    {
+      "query": "help me chatting with a person",
+      "expected_intent": "escalate_to_human",
+      "expected_snippet": "Thank you for reaching out! I genuinely value your patience and recognize the importance of connecting personally. Before introducing you to a well-versed representative, may I ask if there's a specif"
+    },
+    {
+      "query": "helpme speaking with somebody",
+      "expected_intent": "escalate_to_human",
+      "expected_snippet": "We value your outreach! I'm in tune with the fact that you need assistance in speaking with somebody. I'm here to help guide you through the process. To connect with a human agent, please hold on for "
+    },
+    {
+      "query": "I need assistance to speak with an assistant",
+      "expected_intent": "escalate_to_human",
+      "expected_snippet": "We're listening! I'm keyed into the fact that you need assistance to speak with an assistant. I'm here to help you with that. To connect with an assistant, you can reach out to our customer support te"
+    },
+    {
+      "query": "i do not understand ucan uhelp me speaking to a live agent",
+      "expected_intent": "escalate_to_human",
+      "expected_snippet": "Happy to hear from you! I truly understand that you are experiencing some difficulties and would like assistance in speaking to a live agent. To ensure that I provide you with the most accurate guidan"
+    },
+    {
+      "query": "I want to check what hours I can contact customer assistance",
+      "expected_intent": "general_inquiry",
+      "expected_snippet": "Thank you for trusting us! I'm fully aware of you would like to know the hours during which you can reach our customer assistance team. Our dedicated team is available to assist you during {{Customer "
+    },
+    {
+      "query": "how do I check what hours I can call customer support?",
+      "expected_intent": "general_inquiry",
+      "expected_snippet": "Grateful for your contact! I get the sense that you would like to know the hours when you can contact our customer support team. To check the operating hours, you can visit our website at {{Website UR"
+    },
+    {
+      "query": "what is your customer assistance number?",
+      "expected_intent": "general_inquiry",
+      "expected_snippet": "Honored to assist! I'm clued in that you would like to know our customer assistance number. Our dedicated team can be reached at {{Customer Support Phone Number}}. They are available during {{Customer"
+    },
+    {
+      "query": "can I talk to customer service?",
+      "expected_intent": "general_inquiry",
+      "expected_snippet": "We're here to help! I take note that you are seeking assistance and want to talk to our customer service team. Our dedicated representatives are available during {{Customer Support Hours}} to address "
+    },
+    {
+      "query": "I try to talk to damn customer support",
+      "expected_intent": "general_inquiry",
+      "expected_snippet": "Your message means a lot! I'm aligned with the idea that you are frustrated and in need of assistance in talking to our customer support team. Our dedicated team is here to help you. Please let me kno"
+    },
+    {
+      "query": "help me writing an opinion for your products",
+      "expected_intent": "feedback",
+      "expected_snippet": "Sure! I'm more than willing to assist you in crafting an opinion about our products. Your feedback is extremely valuable as it helps us understand how our products are perceived in the market and iden"
+    },
+    {
+      "query": "how to send my feedback about ur company",
+      "expected_intent": "feedback",
+      "expected_snippet": "We deeply appreciate your interest in providing feedback about our company! To send your valuable feedback, we have a dedicated feedback form on our website. You can easily access it by visiting our w"
+    },
+    {
+      "query": "where can I submit my feedback for a product?",
+      "expected_intent": "feedback",
+      "expected_snippet": "Thank you for your interest in providing feedback for our product! We greatly appreciate your input as it helps us improve and refine our offerings. To submit your feedback, you can visit our website "
+    },
+    {
+      "query": "uhave an address to leave feedback about ur company",
+      "expected_intent": "feedback",
+      "expected_snippet": "Thank you for expressing your interest in leaving feedback about our company. We greatly value your input as it helps us understand how we can better serve our customers. While we don't have a physica"
+    },
+    {
+      "query": "is there an address to send a comment about a product",
+      "expected_intent": "feedback",
+      "expected_snippet": "I'll do my best! We appreciate your interest in providing a comment about our product. To send your comment, you can reach out to our customer support team by email at {{Customer Support Email}} or th"
+    },
+    {
+      "query": "I have got to receive the corporate newsletter",
+      "expected_intent": "event_subscribe",
+      "expected_snippet": "That's great to hear! We value your interest in receiving our corporate newsletter. To subscribe, please provide me with your email address, and I'll ensure you get all the latest updates. Rest assure"
+    },
+    {
+      "query": "I want to know more about the subscription to the newsletter",
+      "expected_intent": "event_subscribe",
+      "expected_snippet": "Thank you for your interest in learning more about our newsletter subscription! Our newsletter keeps you updated on the latest news, promotions, and exclusive content from our company. Subscribing to "
+    },
+    {
+      "query": "assistance to check the status of my newsletter subscription",
+      "expected_intent": "event_subscribe",
+      "expected_snippet": "Unquestionably! I understand that you would like assistance with checking the status of your newsletter subscription. We value your engagement and want to ensure that you have access to the latest upd"
+    },
+    {
+      "query": "can I sign up to the company newsletter?",
+      "expected_intent": "event_subscribe",
+      "expected_snippet": "Unquestionably! We're thrilled to hear that you're interested in signing up for our company newsletter. It's a fantastic way to stay updated with the latest news, offers, and exclusive content. To sub"
+    },
+    {
+      "query": "want assistance canceling the newsletter subscription",
+      "expected_intent": "event_subscribe",
+      "expected_snippet": "I'm sorry to hear that you're looking to cancel your newsletter subscription. We appreciate your previous interest in staying connected with us. To proceed with the cancellation, could you please prov"
+    },
+    {
+      "query": "is it possible to order from {{Delivery City}}",
+      "expected_intent": "gift_options",
+      "expected_snippet": "Positively! We strive to make ordering as convenient as possible for our customers, including those living in {{Delivery City}}. You can absolutely place an order with us, regardless of your location."
+    },
+    {
+      "query": "will you show me what delivery methods I can choose?",
+      "expected_intent": "gift_options",
+      "expected_snippet": "For sure! Let's embark on a journey through our exceptional delivery methods, designed to cater to your unique needs.\n\n1. Standard Shipping: Sit back and relax as your package gracefully arrives withi"
+    },
+    {
+      "query": "is it possible to place an order from {{Delivery Country}}?",
+      "expected_intent": "gift_options",
+      "expected_snippet": "Sure! Our services extend beyond borders, allowing you to place an order from the {{Delivery Country}} seamlessly. The world is our playground when it comes to delivering happiness and ensuring your s"
+    },
+    {
+      "query": "how to check the options for delivery?",
+      "expected_intent": "gift_options",
+      "expected_snippet": "Ah, the quest for knowledge! Allow me to assist you in exploring the various delivery options at your disposal:\n\n1. Visit our website and navigate to the product page of the item you wish to purchase."
+    },
+    {
+      "query": "I want to check what delivery options I have, how to do it?",
+      "expected_intent": "gift_options",
+      "expected_snippet": "Assuredly! Let me guide you on how to explore the delivery options available to you:\n\n1. Visit our website and navigate to the product page of the item you are interested in purchasing.\n2. Look for th"
+    }
+  ],
+  "total": 100
+}

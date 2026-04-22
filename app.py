@@ -15,6 +15,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
+# 确保data目录存在（无论从哪个目录启动）
+DATA_DIR = Path(__file__).parent / "data"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+
 import streamlit as st
 from chain import CRMAgent
 from knowledge import KnowledgeBase
@@ -239,7 +243,7 @@ with tab_kb:
         if uploaded:
             for file in uploaded:
                 # 保存到临时路径
-                tmp_path = Path(f"./data/tmp_{file.name}")
+                tmp_path = DATA_DIR / f"tmp_{file.name}"
                 tmp_path.write_bytes(file.getvalue())
 
                 with st.spinner(f"处理 {file.name} 中..."):
@@ -298,8 +302,8 @@ with tab_eval:
     from pathlib import Path as _Path
 
     st.subheader("📈 System Evaluation Report")
-    eval_path   = _Path("./data/eval_report.json")
-    uplift_path = _Path("./data/uplift_report.json")
+    eval_path   = DATA_DIR / "eval_report.json"
+    uplift_path = DATA_DIR / "uplift_report.json"
 
     # ── 运行评估按钮 ─────────────────────────────────────
     _col_run1, _col_run2, _ = st.columns([1, 1, 3])

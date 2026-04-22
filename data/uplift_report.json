@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-03-02 11:42:14",
+  "assumptions": {
+    "human": {
+      "avg_handle_time_min": 8.0,
+      "hourly_cost_usd": 12.0,
+      "working_hours_per_day": 8.0,
+      "tickets_per_agent_day": 60,
+      "first_contact_resolution": 0.72,
+      "avg_response_time_min": 15.0
+    },
+    "ai": {
+      "avg_handle_time_sec": 8.0,
+      "cost_per_1k_tokens_usd": 0.001,
+      "avg_tokens_per_ticket": 800,
+      "automation_rate": 0.82,
+      "first_contact_resolution": 0.85,
+      "availability": "24/7"
+    },
+    "scale": {
+      "daily_tickets": 500,
+      "monthly_tickets": 15000,
+      "annual_tickets": 180000
+    }
+  },
+  "eval_results_used": {
+    "intent_accuracy": 0.96,
+    "rag_hit@3": 0.84,
+    "safety_block_rate": 1.0,
+    "ragas_faithfulness": 0.8325,
+    "ragas_answer_relevancy": 0.4714,
+    "ragas_context_precision": 0.8349
+  },
+  "human_baseline": {
+    "agents_needed": 8.3,
+    "avg_handle_time_min": 8.0,
+    "avg_response_time_min": 15.0,
+    "first_contact_resolution": 0.72,
+    "daily_cost_usd": 800.0,
+    "monthly_cost_usd": 24000.0,
+    "annual_cost_usd": 292000.0,
+    "cost_per_ticket_usd": 1.6,
+    "availability": "Mon-Fri 9:00-18:00"
+  },
+  "ai_projection": {
+    "automation_rate": 0.82,
+    "ai_handled_daily": 410,
+    "human_handled_daily": 90,
+    "reduced_agents_needed": 1.5,
+    "avg_handle_time_sec": 8.0,
+    "avg_response_time_sec": 8.0,
+    "first_contact_resolution": 0.85,
+    "availability": "24/7",
+    "daily_api_cost_usd": 0.4,
+    "daily_human_cost_usd": 144.0,
+    "daily_total_cost_usd": 144.4,
+    "monthly_cost_usd": 4332.0,
+    "annual_cost_usd": 52706.0,
+    "cost_per_ticket_usd": 0.2888
+  },
+  "uplift_summary": {
+    "cost_reduction_rate": 0.8195,
+    "annual_savings_usd": 239294.0,
+    "response_time_improvement": 0.9911,
+    "response_time_human_min": 15.0,
+    "response_time_ai_sec": 8.0,
+    "fcr_improvement": 0.1806,
+    "agents_reduced": 6.8,
+    "availability_upgrade": "Mon-Fri 9:00-18:00 → 24/7",
+    "automation_rate": 0.82
+  },
+  "scale": {
+    "daily_tickets": 500,
+    "monthly_tickets": 15000,
+    "annual_tickets": 180000
+  }
+}

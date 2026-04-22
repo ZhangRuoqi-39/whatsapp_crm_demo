@@ -222,7 +222,21 @@ class KnowledgeBase:
         self._bm25_docs:  list[Document]      = []
         self._rebuild_bm25()
 
+        # 若ChromaDB为空，自动从knowledge_base/文件夹重建
+        if self.count() == 0:
+            self._auto_load_knowledge_base()
+
     # ── 私有方法 ─────────────────────────────────────────────
+    def _auto_load_knowledge_base(self) -> None:
+        """ChromaDB为空时，自动读取knowledge_base/下所有txt文件重建知识库。"""
+        kb_dir = Path(__file__).parent.parent / "knowledge_base"
+        if not kb_dir.exists():
+            return
+        for txt_file in sorted(kb_dir.glob("*.txt")):
+            print(f"[KnowledgeBase] 自动加载：{txt_file.name}")
+            result = self.add_file(str(txt_file))
+            print(result)
+
     def _rebuild_bm25(self) -> None:
         """从ChromaDB重新构建BM25内存索引（每次启动或写入后刷新）。"""
         try:

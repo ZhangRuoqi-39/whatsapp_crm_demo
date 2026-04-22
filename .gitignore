@@ -1,8 +1,16 @@
 # ── 环境变量（含API Key，绝对不能上传）─────────────────────
 .env
 
-# ── 自动生成的数据目录 ────────────────────────────────────────
-data/
+# ── 自动生成的ChromaDB和聊天记录（体积大，本地生成）────────
+data/chroma_db/
+data/chat_history/
+data/kb_fingerprints.txt
+
+# ── 以下data/文件保留在Git中 ─────────────────────────────────
+# data/eval_report.json
+# data/uplift_report.json
+# data/golden_test_set.json
+# data/bitext_intents.csv
 
 # ── Python缓存 ───────────────────────────────────────────────
 __pycache__/

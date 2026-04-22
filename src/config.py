@@ -4,7 +4,10 @@ config.py
 统一配置管理，所有模块从这里读取配置。
 """
 import os
+from pathlib import Path
 from dotenv import load_dotenv
+
+_PROJECT_ROOT = Path(__file__).parent.parent
 
 load_dotenv()
 
@@ -18,7 +21,7 @@ CHAT_MODEL      = os.getenv("CHAT_MODEL", "deepseek-chat")
 RERANK_MODEL    = os.getenv("RERANK_MODEL", "gte-rerank")   # 通义千问Rerank模型
 
 # ── ChromaDB ─────────────────────────────────────────────
-CHROMA_PERSIST_DIR = os.getenv("CHROMA_PERSIST_DIR", "./data/chroma_db")
+CHROMA_PERSIST_DIR = os.getenv("CHROMA_PERSIST_DIR", str(_PROJECT_ROOT / "data" / "chroma_db"))
 CHROMA_COLLECTION  = os.getenv("CHROMA_COLLECTION", "game_crm_kb")
 
 # ── 检索配置（Hybrid Search两阶段） ──────────────────────
@@ -35,10 +38,10 @@ CHUNK_OVERLAP = 50
 SEPARATORS    = ["\n\n", "\n", ".", "!", "?", "。", "！", "？", " ", ""]
 
 # ── 去重 ─────────────────────────────────────────────────
-FINGERPRINT_FILE = "./data/kb_fingerprints.txt"   # SHA256指纹文件
+FINGERPRINT_FILE = str(_PROJECT_ROOT / "data" / "kb_fingerprints.txt")
 
 # ── 对话历史 ─────────────────────────────────────────────
-CHAT_HISTORY_DIR = os.getenv("CHAT_HISTORY_DIR", "./data/chat_history")
+CHAT_HISTORY_DIR = os.getenv("CHAT_HISTORY_DIR", str(_PROJECT_ROOT / "data" / "chat_history"))
 
 # ── Intent taxonomy：通用客服intent → 游戏CRM映射 ─────────
 INTENT_TAXONOMY = {
