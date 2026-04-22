@@ -8,9 +8,21 @@ from pathlib import Path
 
 _PROJECT_ROOT = Path(__file__).parent.parent
 
+
+def _get_secret(key: str) -> str:
+    try:
+        import streamlit as st
+        val = st.secrets.get(key, "")
+        if val:
+            return val
+    except Exception:
+        pass
+    return os.environ.get(key, "")
+
+
 # ── API Keys ─────────────────────────────────────────────
-DASHSCOPE_API_KEY = os.environ.get("DASHSCOPE_API_KEY", "")
-DEEPSEEK_API_KEY  = os.environ.get("DEEPSEEK_API_KEY", "")
+DASHSCOPE_API_KEY = _get_secret("DASHSCOPE_API_KEY")
+DEEPSEEK_API_KEY  = _get_secret("DEEPSEEK_API_KEY")
 
 # ── 模型配置 ─────────────────────────────────────────────
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-v3")
