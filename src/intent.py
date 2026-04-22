@@ -10,11 +10,12 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_openai import ChatOpenAI
 
+from pathlib import Path
 import sys
 sys.path.insert(0, os.path.dirname(__file__))
 from config import DEEPSEEK_API_KEY, CHAT_MODEL, INTENT_TAXONOMY
 
-TRAIN_CSV = "./data/bitext_intents.csv"
+TRAIN_CSV = str(Path(__file__).parent.parent / "data" / "bitext_intents.csv")
 N_SHOTS   = 2
 
 
