@@ -204,6 +204,7 @@ class KnowledgeBase:
             _key = st.secrets.get("DASHSCOPE_API_KEY", "") or os.environ.get("DASHSCOPE_API_KEY", "")
         except Exception:
             _key = os.environ.get("DASHSCOPE_API_KEY", "")
+        print(f"DEBUG dashscope_key='{_key}' len={len(_key) if _key else 0}")
         self._embedding = DashScopeEmbeddings(
             model=EMBEDDING_MODEL,
             dashscope_api_key=_key,
