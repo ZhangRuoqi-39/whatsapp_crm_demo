@@ -199,6 +199,7 @@ class KnowledgeBase:
         os.makedirs(CHROMA_PERSIST_DIR, exist_ok=True)
 
         # Dense向量存储
+        DASHSCOPE_API_KEY = os.environ.get("DASHSCOPE_API_KEY") or os.getenv("DASHSCOPE_API_KEY")
         self._embedding = DashScopeEmbeddings(
             model=EMBEDDING_MODEL,
             dashscope_api_key=DASHSCOPE_API_KEY,

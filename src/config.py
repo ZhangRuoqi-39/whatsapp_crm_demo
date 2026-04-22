@@ -5,28 +5,12 @@ config.py
 """
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 
 _PROJECT_ROOT = Path(__file__).parent.parent
 
-# 本地开发：从.env文件加载（不覆盖已有环境变量）
-load_dotenv(override=False)
-
-
-def _get_secret(key: str) -> str | None:
-    """优先读os.environ（含Streamlit Cloud注入的Secrets），兜底读st.secrets。"""
-    val = os.environ.get(key)
-    if val:
-        return val
-    try:
-        import streamlit as st
-        return st.secrets.get(key)
-    except Exception:
-        return None
-
 # ── API Keys ─────────────────────────────────────────────
-DASHSCOPE_API_KEY = _get_secret("DASHSCOPE_API_KEY")
-DEEPSEEK_API_KEY  = _get_secret("DEEPSEEK_API_KEY")
+DASHSCOPE_API_KEY = os.environ.get("DASHSCOPE_API_KEY")
+DEEPSEEK_API_KEY  = os.environ.get("DEEPSEEK_API_KEY")
 
 # ── 模型配置 ─────────────────────────────────────────────
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-v3")
